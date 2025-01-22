@@ -1,36 +1,85 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Interactive Map Explorer
 
-## Getting Started
+An interactive web application that allows users to explore maps, search for locations, get directions, and view real-time traffic information.
 
-First, run the development server:
+## Author
 
-```bash
+Pleasure Nyakane
+
+## Features
+
+- Interactive Google Map
+- Address search with autocomplete
+- Directions from user's location to searched destination
+- Real-time traffic information toggle
+- Dark mode support
+
+## Inspiration
+
+The creative features of this project were inspired by the 28East Pty Ltd website, specifically their "Maps to Optimise Deliveries" Transport & Logistics: Last Mile Delivery Solution. Google Maps Platform has been a popular choice for businesses seeking to leverage real-time location data, traffic information, and optimized routing algorithms to streamline their operations, whether for on-demand rides or last-mile deliveries. By integrating Google Maps APIs and SDKs into their applications, businesses can create feature-rich solutions for their fleet operations.
+
+## Prerequisites
+
+Before you begin, ensure you have met the following requirements:
+
+- Node.js (v14 or later)
+- npm or yarn
+- A Google Maps API key with the following APIs enabled:
+  - Maps JavaScript API
+  - Places API
+  - Directions API
+
+## Installation
+
+1. Clone the repository:
+   \`\`\`
+   git clone https://github.com/Plnyakan/28east-assessment.git
+   cd 28east-assessment
+   \`\`\`
+
+2. Install the dependencies:
+   \`\`\`
+   npm install
+   \`\`\`
+   or
+   \`\`\`
+   yarn install
+   \`\`\`
+
+3. Create a \`.env.local\` file in the root directory and add your Google Maps API key:
+   \`\`\`
+   NEXT_PUBLIC_GOOGLE_MAPS_API_KEY=your_api_key_here
+   \`\`\`
+
+## Running the Application
+
+To run the application in development mode:
+
+\`\`\`
 npm run dev
-# or
+\`\`\`
+or
+\`\`\`
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+\`\`\`
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Usage
 
-## Learn More
+1. Upon loading the application, you'll see a map centered on a default location.
+2. Use the search bar to look for a specific location.
+3. Click on the map to set a destination, or use the search results.
+4. The application will display directions from your current location (if available) to the selected destination.
+5. Use the "Show Traffic" button to toggle real-time traffic information on the map.
+6. The theme toggle in the header allows you to switch between light and dark modes.
 
-To learn more about Next.js, take a look at the following resources:
+## Contributing
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Contributions to the Interactive Map Explorer are welcome. Please feel free to submit a Pull Request.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## License
 
-## Deploy on Vercel
+This project is open source and available under the [MIT License](LICENSE).
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
